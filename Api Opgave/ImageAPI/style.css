@@ -1,0 +1,16 @@
+.title{
+    text-align:center;
+}
+.content {
+    text-align: center;
+    padding: 30px;
+    margin: 0px auto;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    font-size: 24px;
+    width: 400px;
+}
+#message{
+width: 400px;
+height: 400px;
+}
