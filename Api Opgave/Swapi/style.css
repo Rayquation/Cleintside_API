@@ -1,0 +1,108 @@
+@font-face {
+    font-family: star-wars-font;
+    src: url(font/Starjedi.ttf)
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav-bar{
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: white;
+    font-family:star-wars-font,'Courier New', Courier, monospace;
+    font-size: 1.2em;
+}
+.active{
+    text-decoration: underline;
+}
+
+.content{
+    flex:1;
+    background-image: url(/pictures/StarWarsMedium.jpg);
+    background-size: cover;
+    background-position:50% 70% ;
+    overflow: auto;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: rgba(0,0,0, .6);
+    color: #fff;
+    min-width: 20%;
+    flex: 1;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    overflow: auto;
+    text-transform: capitalize;
+}
+
+.card ul{
+    list-style-position: inside;
+}
+
+.card ul li{
+    margin-left: 0.5em;
+}
+
+.card .Hidden{
+    display: none;
+}
+
+.card .Shown{
+    display: block;
+}
+
+.loadingClass{
+    width: 500px;
+    height: 150px;
+    color: white;
+    position: absolute;
+    left: 350px;
+    top: 300px;
+    font-family: Trebuchet MS;
+    font-size: 5em;
+    text-anchor: middle;
+    transform:translate(50%);
+    font-weight:bold;
+    opacity: 0;
+    animation:loadingAnimation 3s infinite;
+  }
+
+  @keyframes loadingAnimation{
+
+    from{
+      letter-spacing: -0.5em;
+      opacity: 0
+    }
+
+    to{
+
+    }
+  }
+
+  .visible{
+    opacity: 1;
+  }
